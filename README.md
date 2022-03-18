@@ -1,4 +1,4 @@
-# TicTacToe
-The popular tictactoe game with js - matrix
+# TicTacToe 
+The popular tictactoe game - simple - with js - matrix
 
 -- fully made by zagroubi --
