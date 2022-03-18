@@ -1,0 +1,103 @@
+body {
+        background-color: mediumslateblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        overflow: hidden;
+      }
+.head {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+      }
+      
+.p1,
+.p2 {
+        font-size: 70px;
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        box-shadow: 0 0 7px 4px #0000004d;
+        padding: 20px 35px;
+        background-color: white;
+        top: 150px;
+        border-radius: 10px;
+      }
+      
+.p1 {
+        left: 100px;
+      }
+      
+.p2 {
+        right: 100px;
+      }
+      
+.board {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 420px;
+        height: 420px;
+        background-color: mediumslateblue;
+      }
+      
+.sqr {
+        background-color: white;
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 7px 4px #00000030;
+        transition: 0.5s;
+      }
+      
+.x::before {
+        content: "X";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 130px;
+        font-weight: bold;
+        color: #f44336;
+      }
+      
+.o::before {
+        content: "O";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 130px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+      
+#congrat {
+        padding: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        background-color: yellow;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s;
+        user-select: none;
+      }
+      
+#reset {
+        padding: 10px 50px;
+        margin-top: 20px;
+        font-weight: bold;
+        background: white;
+        border: 2px solid rgb(73, 73, 73);
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
